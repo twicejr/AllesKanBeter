@@ -1,0 +1,9 @@
+[submodule "sys"]
+	path = sys
+	url = git@bitbucket.org:twicejr/lean.sys.git
+[submodule "mod"]
+	path = mod
+	url = git@bitbucket.org:twicejr/lean.mod.git
+[submodule "app"]
+	path = app
+	url = https://github.com/twicejr/AllesKanBeter
