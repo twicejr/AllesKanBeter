@@ -7,10 +7,6 @@
     {
         $env = App::ENV_DEVELOPMENT;
     }
-    elseif(stristr($_SERVER['SERVER_NAME'], 'visietest.nl'))
-    {
-        $env = App::ENV_STAGING;
-    }
     else
     {
         $env = App::ENV_PRODUCTION;
@@ -50,6 +46,7 @@
         }
         else
         {
-            exit;//todo: 404 / log..
+            Request::header(404);
+            echo Template::in('front/404.php')->exception($e)->render();
         }
     }
