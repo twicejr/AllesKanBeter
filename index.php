@@ -7,10 +7,6 @@
     {
         $env = App::ENV_DEVELOPMENT;
     }
-    elseif(stristr($_SERVER['SERVER_NAME'], 'visietest.nl'))
-    {
-        $env = App::ENV_STAGING;
-    }
     else
     {
         $env = App::ENV_PRODUCTION;
